@@ -1,3 +1,9 @@
+/*
+Created by Nathan Kriger
+Last Updated : December 14th 2024
+*/
+
+
 #include "dataInject.h"
 #include <fstream>
 #include <sstream>
@@ -29,9 +35,9 @@ void DataInject::loadData(const std::string& filename) {
     int year;
     double inflation;
     double unemployment;
-
+    //while reading data
     while (file >> year >> inflation >> unemployment) {
-        //linked list to grab data and put it into teh struct
+        //linked list to grab data and put it into the struct 
         YearData data(year, inflation, unemployment);
         Node* newNode = new Node(data);
         newNode->next = head;

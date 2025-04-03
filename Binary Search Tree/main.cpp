@@ -39,9 +39,11 @@ int main() {
             if (!tree.insert(argument)) {
                 cerr << "insert <" << argument << "> failed. String already in tree.\n";
             }
+            //print out size as called
         } else if (command == "size") {
             cout << tree.size() << endl;
 
+            //find arguement
         } else if (command == "find") {
             getline(cin, argument);
             argument.erase(0,1);

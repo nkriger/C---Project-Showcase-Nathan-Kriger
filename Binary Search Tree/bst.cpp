@@ -2,13 +2,12 @@
 
 
 BST::BST() : m_root(NULL) {}
-/*
+
 
 BST::~BST() {
     clear(m_root);
 }
-*/
-//didnt use destruct
+
 using namespace std;
 
 void BST::clear(Node *cur_root) {
@@ -45,6 +44,7 @@ bool BST::insert(string str, Node *&cur_root) {
     }
 }
 
+//Return size 
 int BST::size() const {
 
     return size(m_root);
